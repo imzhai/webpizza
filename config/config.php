@@ -40,21 +40,15 @@ $db = [];
 require_once "database.php";
 /**
  * 4. Définition des variables de routage
- */ 
-// Définition de l'uti par défaut
- $uri = "/";
-
-// Définition d'une table de reoutage par dégait
+ */
+// Définition de l'uri par défaut
+$uri = "/";
+// Définition de la table de routage par défaut
 $routes = [];
-
-// Contient les onformations de la route courante
+// Contient les information de la route courante
 $route = [];
-
-// Inclusion de la config du routagr
-require_once "route.php";
-
-
-
- /**
+// Inclusion de la config du routage
+require_once "routes.php";
+/**
  * 5. Definition des exepressions régulières
  */
