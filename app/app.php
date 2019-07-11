@@ -11,7 +11,7 @@
  * 2. Intégration de la configuration
  */ require_once "../config/config.php";
 
- echo WEBSITE_TITLE;
+
 
 /**
  * 3. Définition de l'environnement
@@ -20,14 +20,15 @@ require_once "../app/environnement.php";
 /**
  * 4. Comportement des erreurs
  */
-require_once "../app/err_reporting.php"
+require_once "../app/err_reporting.php";
 /**
  * 5. Connections aux base de données
  */
-require_once "../app/dbconnect.php"
+require_once "../app/dbconnect.php";
 /**
  * 6. Routage de l'application
  */
+require_once "../app/routing.php";
 /**
  * 7. Inclusion des fonctions "Utils"
  */
@@ -37,3 +38,4 @@ require_once "../app/dbconnect.php"
 /**
  * 9. Compilation de la page (part 2 - la compilation finale)
  */
+echo  $GLOBALS['route_active'] ;
