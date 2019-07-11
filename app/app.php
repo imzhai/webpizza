@@ -16,9 +16,11 @@
 /**
  * 3. Définition de l'environnement
  */
+require_once "../app/environnement.php";
 /**
  * 4. Comportement des erreurs
  */
+require_once "../app/err_reporting.php"
 /**
  * 5. Connections aux base de données
  */

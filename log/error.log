@@ -1,0 +1,1 @@
+[Tue Jul 09 10:20:33.187659 2019] [php7:crit] [pid 7072:tid 1976] [client 127.0.0.1:50138] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\\xampp\\htdocs\\webpizza\\app\\app.php on line 14
