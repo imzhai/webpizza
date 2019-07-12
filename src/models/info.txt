@@ -1,0 +1,1 @@
+Le répertoire "models" stocke les fichiers qui se chargent d'interroger la base de données.

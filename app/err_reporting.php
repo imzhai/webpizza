@@ -1,18 +1,26 @@
 <?php
 /**
- * Fichier de définition de l'environnement d'exécution de l'application
+ * Fichier de définition du comportement des erreurs PHP
+ * 
+ * Info
+ * - http://php.net/manual/fr/function.error-reporting.php
  */
-// Dans le cas ou la variable $dev_domains n'est pas défini (dans le fichier config.php)
-// On initalise la variable $dev_domains avec un tableau vide
-if (!isset($dev_domains)) {
-    $dev_domains = [];
+// Dans le cas ou la variable $env n'est pas défini
+// On initalise la variable $env avec la valeur "prod"
+if (!isset($env)) {
+    $env = "prod";
 }
-// Si la super globale $_SERVER['SERVER_NAME'] n'est pas vide
-// ET que la valeur de la super global $_SERVER['SERVER_NAME'] est dans le tableau
-// $dev_domains, alors on redéfini la variable $env
-if (
-    !empty($_SERVER['SERVER_NAME']) &&
-    in_array($_SERVER['SERVER_NAME'], $dev_domains)
-) {
-    $env = "dev";
+// Dans le cas ou la variable $env est défini à une autre valeur que "dev"
+// On demande à PHP d'ignorer toutes les erreurs.
+if ($env != "dev") {
+    ini_set('display_errors', 0);
+    ini_set('display_startup_errors', 0);
+    error_reporting(0);
+}
+// Dans le cas ou la variable $env est défini à la valeur "dev"
+// On demand e à PHP d'afficher toutes les erreurs
+else {
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 }

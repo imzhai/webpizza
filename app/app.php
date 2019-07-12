@@ -32,10 +32,13 @@ require_once "../app/routing.php";
 /**
  * 7. Inclusion des fonctions "Utils"
  */
+include_once "../app/utils.php";
+// Chemin pour acceder à dump.php :
+//include_once UTILS_PATH."dump.php";
 /**
  * 8. Compilation de la page (part 1 - Le controleur principal)
  */
 /**
  * 9. Compilation de la page (part 2 - la compilation finale)
  */
-echo  $GLOBALS['route_active'] ;
+include_once "../app/compile.php";

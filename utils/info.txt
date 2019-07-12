@@ -1,1 +1,1 @@
-Le répertoire "utils" contient les diverses fonctionnalités de l'application.
+Le répertoires "utils" contient les divers fonctionnalités de l'appli
