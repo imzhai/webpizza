@@ -38,6 +38,7 @@ include_once "../app/utils.php";
 /**
  * 8. Compilation de la page (part 1 - Le controleur principal)
  */
+include_once "../src/controllers/common.php";
 /**
  * 9. Compilation de la page (part 2 - la compilation finale)
  */
