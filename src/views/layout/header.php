@@ -62,14 +62,14 @@
                                 <?= $_SESSION['user']['fullname'] ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="/mon-compte">Mon compte</a>
+                                <a class="dropdown-item" href="<?= url('account') ?>">Mon compte</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/deconnexion">Déconnexion</a>
                             </div>
                         </li>
                         <?php else: ?>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?>" href="/mon-compte">Mon Compte</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?>" href="<?= url('account') ?>">Mon Compte</a>
                         </li>
                         <?php endif; ?>
                         <li class="nav-item">

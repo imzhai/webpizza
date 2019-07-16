@@ -2,7 +2,7 @@
 
 
 <div class="container">
-<h1>Oooooooooooooups</h1>
+<h1>Page non trouvée !</h1>
 <img src="assets/images/404.png" alt="">
 </div>
 
