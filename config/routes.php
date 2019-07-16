@@ -19,10 +19,14 @@ $routes = [
     ],
     // Liste des produits
     ["pizzas", "/pizzas", "products:pizzas", ["HEAD","GET"]],
+    ["pasta", "/pates", "products:pasta", ["HEAD","GET"]],
     ["salads", "/salades", "products:salads", ["HEAD","GET"]],
     ["desserts", "/desserts", "products:desserts", ["HEAD","GET"]],
     ["drinks", "/boissons", "products:drinks", ["HEAD","GET"]],
+    ["starters", "/entrees", "products:starters", ["HEAD","GET"]],
+
     ["menus", "/menus", "products:menus", ["HEAD","GET"]],
+    
     ["product_create", "/admin/product/create", "products:create", ["HEAD","GET","POST"]],
     ["product_update", "/admin/product/update", "products:update", ["HEAD","GET","POST"]],
     ["product_delete", "/admin/product/delete", "products:delete", ["HEAD","GET","POST"]],

@@ -10,9 +10,6 @@
 /**
  * 2. Intégration de la configuration
  */ require_once "../config/config.php";
-
-
-
 /**
  * 3. Définition de l'environnement
  */
